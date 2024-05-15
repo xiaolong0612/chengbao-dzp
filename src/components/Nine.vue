@@ -18,7 +18,7 @@
               <div class="name">{{ val.prizeName }}</div>
             </div>
             <div v-else class="start text-center" @click.stop.prevent="startGo">
-              <span class="absolute bottom-0 left-0 right-0 text-white text-xs">消耗龙蛋：10</span>
+              <span class="absolute bottom-0 left-0 right-0 text-white text-xs">消耗龙蛋：{{gameCost}}</span>
             </div>
           </li>
         </ul>
@@ -31,11 +31,11 @@
             :autoplay="3000"
             :show-indicators="false"
           >
-            <van-swipe-item v-for="item in 5" :key="item">
+            <van-swipe-item v-for="(item,index) in awardRecordList" :key="index">
               <div class="item">
-                <span>ID: 9527</span>
-                <span>amber</span>
-                <span>中奖：50龙蛋龙蛋龙蛋</span>
+<!--                <span>ID: {{item.uid}}</span>-->
+                <span>{{item.nickname}}</span>
+                <span>中奖：{{item.hitPrize}}</span>
               </div>
             </van-swipe-item>
           </van-swipe>
@@ -43,14 +43,16 @@
       </div>
       <div class="tip text-sm">
         活动介绍：<br>
-        这个很好玩的哦
+        {{gameInfo}}
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import { getGift } from "@/api/index";
+import {getGift, getGamesInfo, getPrizeList, getGameCost, getRewardRecord} from "@/api/index";
+import {showLoadingToast,closeToast} from "vant";
+
 export default {
   props: {
     awardList: {
@@ -85,6 +87,9 @@ export default {
       orderList: [1, 2, 3, 8, -9, 4, 7, 6, 5], // 正常循环排列下的顺序 0 为中间的抽奖按钮/分区标识
       lotterywin: -9, // 中奖位置
       lotterywinr: {},
+      gameInfo:"",
+      gameCost:"",
+      awardRecordList:[],
       lottery: {
         count: 8, //总共有多少个位置
         timer: 0, //setTimeout的ID，用clearTimeout清除
@@ -99,8 +104,32 @@ export default {
   },
   mounted() {
     // this.testGo()
+    this.getInfo();
+    this.getGameCost();
+    this.getRewardRecordList();
   },
   methods: {
+    async getRewardRecordList() {
+  getRewardRecord({
+    "pageNum":1,
+    "pageSize":10,
+  }).then(result => {
+    result.data.data.forEach((item, index) => {
+      item.order = index + 1
+    });
+    this.awardRecordList = result.data.data
+      })
+    },
+    async getInfo(){
+      getGamesInfo().then(result => {
+        this.gameInfo = result.data
+      })
+     },
+    async getGameCost(){
+      getGameCost().then(result => {
+        this.gameCost = result.data
+      })
+    },
     async testGo () {
       const { data } = await getGift();
       let win = this.awardList.findIndex(item => item.prizeId == data.prizeId) + 1
@@ -128,7 +157,9 @@ export default {
       if (!this.isTurn) return
       this.isTurn = false // 等待下一次开启 注：接口失败等异常情况 需要重置
       // await api 获取中奖信息 （因为数据结构的定义，这里拿到中奖位置将变得非常 esay）
+      showLoadingToast("加载中");
       const { data } = await getGift();
+      closeToast();
       this.lotterywinr = data
       let win = this.awardList.findIndex(item => item.prizeId == data.prizeId) + 1 // 中奖位置
       if (!win) return

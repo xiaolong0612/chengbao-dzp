@@ -2,7 +2,7 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
 import pinia from './stores'
-import { Toast, ConfigProvider } from 'vant'
+import { Toast, ConfigProvider,List } from 'vant'
 // import permission from './permission'
 import { loadAllPlugins } from '@/plugins'
 
@@ -23,7 +23,7 @@ loadAllPlugins(app)
 // permission(pinia)
 
 app.use(pinia)
-app.use(router)
+app.use(router).use(List)
 app.use(Toast)
 app.use(i18n)
 app.use(ConfigProvider)

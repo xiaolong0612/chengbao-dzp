@@ -3,7 +3,7 @@
 
 <template>
   <van-config-provider theme="dark">
-    <div :style="{backgroundImage: 'url('+$getAssetsFile('images/bg.jpg')+')', backgroundSize: 'auto 100%', backgroundPosition: 'right'}" class="min-h-screen">
+    <div :style="{backgroundImage: 'url('+$getAssetsFile('images/bg.jpg')+')', backgroundSize: 'auto 100%', backgroundPosition: 'right'}" class=" home-page">
       <RouterView />
     </div>
   </van-config-provider>
@@ -18,5 +18,9 @@
 <style>
 ::-webkit-scrollbar {
   display: none;
+}
+.home-page{
+  height:100vh;
+  overflow-y: scroll;
 }
 </style>
