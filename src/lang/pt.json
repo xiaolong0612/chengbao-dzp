@@ -1,0 +1,164 @@
+{
+  "baoHanFeiYong": "Incluindo despesas",
+  "chulizhong": "Em processamento",
+  "confirm": "confirme",
+  "dongjie": "congelar",
+  "error": "falhar",
+  "feiyong": "custo",
+  "forget": {
+    "account": "Conta",
+    "title": "Recuperar Senha"
+  },
+  "helpCenter": {
+    "accountSafe": "Segurança da conta",
+    "accountSafeContent": "Perguntas frequentes sobre a plataforma:<br>Como recarregar<br>R: Você pode comprar USDT em (www.okex.com), (www.paxful.com), (www.binance.com) ou em qualquer exchange. \nQuando você precisar sacar dinheiro para seu endereço de saque, basta fazer upload de uma captura de tela do seu pedido de saque. \nO aplicativo de recarga será revisado manualmente pelo computador e adicionado ao seu saldo (captura de tela do upload).O USDT foi transferido com sucesso para o endereço do pacote de fundos designado. \nPara solicitar recarga, você precisa fazer upload de uma captura de tela. \n<br>Como sacar dinheiro<br>R: Qualquer bolsa ou carteira pode sacar USDT. \nPreencha seu endereço de pagamento USDT corretamente. \nDevido à natureza especial da moeda virtual, ela não pode ser reembolsada após a transferência. \n<br>Segurança da conta<br>R: Mantenha sua conta e senha seguras. \nPerder sua senha pode resultar na perda de sua conta. \n<br>Como se tornar um VIP<br>R: Você pode comprar USDT em (www.okex.com) ou (www.paxful.com) ou (www.binance.ae) ou em qualquer bolsa. \nRetire o valor que você precisa depositar no endereço de saque acima e carregue uma captura de tela do seu aplicativo. \nOs pedidos de depósito serão correspondidos por computador e revisados ​​por humanos. \nEm seguida, adicione seu saldo e você poderá atualizar seu VIP<br>O que fazer se você esquecer sua senha de transação<br>Resposta: Se você esquecer sua senha, ela não poderá ser alterada ou restaurada. \nPor favor, mantenha a senha e as chaves da sua conta seguras. \nEles são a prova final de propriedade da sua conta. \nSua perda de ativos pode ser sua<br>transferência interna<br>R: Se você tiver duas contas e mais fundos, poderá solicitar transferência ilimitada de ativos da conta; usuários VIP podem usar a transferência de ativos sem chave. \n(O usuário pagante também deve ser VIP) Caso tenha alguma dúvida, consulte as regras VIP<br>Qual ​​a frequência de utilização de cada conta? \nQuanto tempo leva para atualizar a autorização do limite da conta? \nR: Exceto VIP1, que dura um mês, o tempo de uso de outras contas é permanente e as permissões de cota também são permanentes. \n<br>O nível da conta recém-registrada é 0. Quais permissões eu tenho? \n<br>R: A plataforma está aberta para inscrição de público. \nQualquer pessoa pode registrar sua própria conta. \nO nível da conta recém-registrada é 0 (recarga, transferência, retirada de dinheiro, etc.). \nEles são gratuitos e você não precisa atualizar sua conta para negociar. \n<br>Quais são as funções e benefícios de atualizar sua conta? \n? \n<br>R: Caso sua conta precise receber transferências de outras pessoas, você deverá utilizar o limite de pagamento (neste momento, a conta nível 0 não poderá receber fundos). \nVocê deve atualizar o nível da sua conta para pelo menos 1 estrela para usar recursos pagos; quanto maior o nível, mais tarefas diárias e mensais, atualize conforme necessário. \n<br>Não quero mais usar o VIP, o que devo fazer? \n<br>R: Atualize para o nível VIP. \nOs depósitos devem ser deduzidos do saldo correspondente e a conta está atualizada há 60 dias. \nCaso não queira continuar utilizando, você pode solicitar o cancelamento, devolver o capital social e cancelar a conta. \n<br>Como converter USDT em moeda local? \n<br>R: Você pode sacar USDT para sua carteira ou (www.okx.com) ou (www.paxful.com) ou (www.binance.com) e pode trocá-lo por USD, Rhea em todas as exchanges. moedas, incluindo iene, libra, euro, iene, peso<br>",
+    "howToUseVip": "Como usar VIP",
+    "howToUseVipContent": "A plataforma está aberta para inscrição de público. \nQualquer pessoa pode registrar sua própria conta. \nO nível VIP da conta recém-registrada é 0 (pode recarregar, transferir, sacar dinheiro e gerar cheques). \nEles são gratuitos e você não precisa atualizar sua conta para operar. \n<br>Se sua conta precisar receber transferências de terceiros e trocar cheques eletrônicos de terceiros, você precisará usar limites de pagamento (no momento, contas de nível 0 não poderão receber pagamentos). Você precisa atualizar o nível de sua conta para use a função de pagamento; quanto mais alto o nível, as diárias e mensalidades de cada um são diferentes, também podemos fornecer aos clientes VIP serviços de câmbio, empréstimos hipotecários em USDT e outros serviços, atualize conforme necessário. \n<br>VIP1: Transferir 10USDT por dia, 30USDT por mês<br>VIP2: Transferir 100USDT por dia, 3000USDT por mês<br>VIP3: Receber 30.000 USDT por dia, 900.000 USDT por mês<br>VIP4: 100.000 USDT por dia , por mês 3.000.000 USDT por mês<br>VIP5: Receba 200.000 USDT por dia e 6.000.000 USDT por mês<br>Atualize para o nível VIP. \nOs depósitos devem ser deduzidos do saldo correspondente e a conta está atualizada há 60 dias. \nCaso não queira continuar utilizando, você pode solicitar o cancelamento, devolver o capital social e cancelar a conta."
+  },
+  "index": {
+    "currency": "Moeda",
+    "latestPrice": "Preço mais recente"
+  },
+  "inputFeiYong": "Por favor insira a taxa",
+  "inputTransferNum": "Por favor preencha o valor da transferência",
+  "inputWalletAddress": "Por favor insira o endereço da carteira",
+  "jszzs": "O destinatário é pelo menos",
+  "listNoMore": "não mais",
+  "login": {
+    "form": {
+      "account": "Conta",
+      "password": "senha"
+    },
+    "login": "Conecte-se",
+    "other": {
+      "getPwd": "Recuperar Senha",
+      "noa": "Nenhuma conta"
+    },
+    "placeholder[0]": "Por favor insira o nome de usuário ou e-mail",
+    "placeholder[1]": "Por favor insira a senha",
+    "placeholder[2]": "insira o código de verificação",
+    "register": "registro",
+    "tip[0]": "Erro na conta",
+    "tip[1]": "senha incorreta",
+    "tip[2]": "Erro no código de verificação",
+    "tip[3]": "Erro de e-mail",
+    "title": "Olá, bem-vindo ao fazer login"
+  },
+  "message": {
+    "success": "submetido com sucesso"
+  },
+  "min": "ao menos",
+  "order": {
+    "transfer": "Converter",
+    "upgrade": "Atualizar assinatura",
+    "withdraw": "retirar"
+  },
+  "pay": {
+    "cardDetail": "Detalhes do cartão",
+    "cardNo": "número do cartão",
+    "cardUsername": "Nome do titular do Cartão",
+    "dialogContent": "Verifique seu nome verdadeiro primeiro",
+    "dialogTitle": "dica",
+    "dueDate": "data de validade",
+    "example": "Exemplo: John Lee Doe",
+    "next": "Próxima Etapa",
+    "pay": "você paga",
+    "pleaceReSendCode": "Obtenha o código de verificação novamente",
+    "reSendCode": "Obtenha o código de verificação novamente",
+    "renzheng": "Verificado",
+    "reviewing": "sob revisão",
+    "securityCode": "Código de segurança",
+    "sendCode": "Envie o código de verificação",
+    "submit": "enviar"
+  },
+  "pingzheng": "certificado",
+  "recharge": {
+    "tips": "Você pode comprar USDT em (www.okex.com) ou (www.paxful.com) ou (www.binance.com) ou em qualquer bolsa. \nRetire os fundos que você precisa depositar em seu endereço de saque e carregue uma captura de tela da solicitação. \nOs pedidos de depósito serão classificados por computador e revisados ​​manualmente. \nEm seguida, adicione o saldo para você (faça upload de uma captura de tela). Depois de transferir com sucesso o USDT para o endereço do pacote de fundos designado, você precisa fazer upload de uma captura de tela para solicitar uma recarga. Veja um exemplo a seguir:"
+  },
+  "record": {
+    "title": "Registro"
+  },
+  "register": {
+    "confirmPwd": "Confirme sua senha",
+    "confirmTradepass": "Confirme a senha da transação",
+    "country": "nação",
+    "createAccount": "criar uma conta",
+    "email": "Correspondência",
+    "hasAccount": "Já tem uma conta",
+    "login": "Conecte-se",
+    "pwd": "senha",
+    "tel": "número de telefone",
+    "tradepass": "senha de transação",
+    "tradepassTip": "A senha da transação é a única credencial da sua conta e não pode ser alterada ou consultada. Salve-a!",
+    "username": "nome de usuário"
+  },
+  "safeCenter": {
+    "changeEmail": "Modificar e-mail",
+    "changePwd": "alterar a senha",
+    "emailCheck": "Confirmação de e-mail",
+    "emailNoSame": "Os dois e-mails são inconsistentes",
+    "pwdNoSame": "Duas senhas são inconsistentes"
+  },
+  "setting": {
+    "aboutUs": "sobre nós",
+    "aboutUsContent": "O USDT Financial Management é um centro de serviços completo criado para usuários VIP, onde você pode aprender sobre todas as oportunidades de gestão financeira adequadas para você e seu fundo de criptomoeda. \nComo detentor de criptomoeda, você também pode encontrar outras soluções financeiras de criptomoeda<br><br>USDT é o token Tether USD (doravante denominado USDT) lançado pela Tether com base na moeda estável do dólar americano. \nUSDT=1 dólar americano, os usuários podem trocar USDT por dólares americanos na proporção de 1:1 a qualquer momento.",
+    "bound": "Vinculado",
+    "securityCenter": "Centro de Segurança",
+    "title": "configurar",
+    "unbound": "Não vinculado"
+  },
+  "shenghezhong": "sob revisão",
+  "shuliang": "quantidade",
+  "success": "sucesso",
+  "tabs[0]": "primeira página",
+  "tabs[1]": "Citações",
+  "tabs[2]": "troca",
+  "tabs[3]": "meu",
+  "tongguo": "passar",
+  "trade": {
+    "availableB": "Saldo disponível",
+    "cooperates": "As ** exchanges com as quais esta plataforma coopera são as seguintes:",
+    "dailyReceivingLimit": "Limite de recebimento diário",
+    "investmentPeriod": "período de investimento",
+    "joinNow": "Participe agora",
+    "monthlyReceive": "Limite de recebimento mensal",
+    "referenceAnnualizedIncome": "Renda anualizada de referência",
+    "rollingTips": "Registros de plataforma",
+    "startAmount": "Quantidade inicial"
+  },
+  "transfer": {
+    "tips": "Membros VIP podem usar transferência com um clique sem senha"
+  },
+  "upgrade": {
+    "dayLimit": "Limite diário de coleta",
+    "dialogTitle": "Por favor insira a senha da transação",
+    "levelRule": "regras de hierarquia",
+    "money": "depósito",
+    "monthLimit": "Limite de coleta mensal",
+    "tips": "Os usuários precisam pagar um depósito para usar os serviços VIP, e o VIP1 é válido por 1 mês. \nEle será cancelado automaticamente quando expirar. Usuários VIP2 e superiores que o usaram por mais de 2 meses podem entrar em contato com o atendimento ao cliente para reembolsar o depósito. Para obter detalhes, consulte a Central de Ajuda."
+  },
+  "user": {
+    "assets": "meus bens",
+    "buy": "Comprar",
+    "buycoin": "Compre moedas rapidamente",
+    "help": "Centro de ajuda",
+    "logout": "desistir",
+    "placeholder1": "Por favor preencha a senha",
+    "placeholder2": "Por favor confirme a senha novamente",
+    "placeholder3": "Por favor preencha a senha da transação",
+    "placeholder4": "Por favor, preencha seu endereço de e-mail",
+    "placeholder5": "Por favor confirme seu e-mail novamente",
+    "recharge": "Valor armazenado",
+    "service": "Entre em contato com o atendimento ao cliente",
+    "transfer": "Transferência interna",
+    "upgrade": "Atualização de membro",
+    "withdraw": "retirar"
+  },
+  "walletAddress": "endereço da carteira",
+  "walletQRcode": "Código QR da carteira",
+  "walletType": "tipo de carteira",
+  "withdraw": {
+    "tips": "Dica de segurança: Preencha seu endereço USDT com precisão, caso contrário a transferência de moeda virtual não poderá ser devolvida."
+  },
+  "yue": "equilíbrio"
+}
