@@ -3,7 +3,7 @@
 
 <template>
   <van-config-provider theme="dark">
-    <div :style="{backgroundImage: 'url('+$getAssetsFile('images/bg.jpg')+')', backgroundSize: 'auto 100%', backgroundPosition: 'right'}" class=" home-page">
+    <div :style="{backgroundImage: 'url('+'../src/assets/images/bg.jpg'+')', backgroundSize: 'auto 100%', backgroundPosition: 'right'}" class=" home-page">
       <RouterView />
     </div>
   </van-config-provider>

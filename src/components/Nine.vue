@@ -2,7 +2,7 @@
   <div>
     <div class="wrap">
       <div class="text-wrap">
-        <img :src="$getAssetsFile('images/title.png')" alt="" srcset="">
+        <img src="~@/assets/images/title.png" alt="" srcset="">
       </div>
       <div class="sudoku-wrap">
         <ul>
