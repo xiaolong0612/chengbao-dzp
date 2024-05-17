@@ -12,10 +12,6 @@ import 'vant/es/dialog/style'
 
 import VantHeader from './components/VantHeader.vue'
 
-import { i18n, vantLocales } from './lang'
-// 对vant组件进行初始化语言设置
-vantLocales(i18n.global.locale.value)
-
 const app = createApp(App)
 
 // 加载所有插件
@@ -25,7 +21,6 @@ loadAllPlugins(app)
 app.use(pinia)
 app.use(router).use(List)
 app.use(Toast)
-app.use(i18n)
 app.use(ConfigProvider)
 app.use(VantHeader)
 setTimeout(() => {

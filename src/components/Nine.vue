@@ -33,8 +33,7 @@
           >
             <van-swipe-item v-for="(item,index) in awardRecordList" :key="index">
               <div class="item">
-<!--                <span>ID: {{item.uid}}</span>-->
-                <span>{{item.nickname}}</span>
+                <span>用户：{{item.nickname}}</span>
                 <span>中奖：{{item.hitPrize}}</span>
               </div>
             </van-swipe-item>
@@ -58,7 +57,11 @@ export default {
     awardList: {
       type: Array,
       default: () => []
-    }
+    },
+    winList: {
+      type: Array,
+      default: () => []
+    },
   },
   watch: {
     awardList (val, oldval) {
@@ -132,17 +135,15 @@ export default {
     },
     async testGo () {
       const { data } = await getGift();
-      let win = this.awardList.findIndex(item => item.prizeId == data.prizeId) + 1
+      // let win = this.awardList.findIndex(item => item.prizeId == data.prizeId)
 
       if(this.testList.find(item => item.prizeId == data.prizeId)){
-        let index = this.testList.findIndex(item => item.prizeId == data.prizeId
-)
+        let index = this.testList.findIndex(item => item.prizeId == data.prizeId)
         this.testList[index]['total'] += 1
       }else{
         data['total'] = 0
         this.testList.push(data)
       }
-      console.log(this.testIndex);
       const max = 100
       if(this.testIndex < max){
         this.testIndex++
@@ -158,14 +159,19 @@ export default {
       this.isTurn = false // 等待下一次开启 注：接口失败等异常情况 需要重置
       // await api 获取中奖信息 （因为数据结构的定义，这里拿到中奖位置将变得非常 esay）
       showLoadingToast("加载中");
-      const { data } = await getGift();
-      closeToast();
-      this.lotterywinr = data
-      let win = this.awardList.findIndex(item => item.prizeId == data.prizeId) + 1 // 中奖位置
-      if (!win) return
-      this.$emit('change', 'start', {})
-      this.lotterywin = win
-      this._rolling()
+      getGift().then(result => {
+        closeToast();
+        this.lotterywinr = result.data
+        console.log(result.data);
+        let win = this.awardList.findIndex(item => item.prizeId == this.lotterywinr.prizeId)+1 // 中奖位置
+        console.log(win);
+        if (!win) return
+        this.$emit('change', 'start', {})
+        this.lotterywin = win
+        this._rolling()
+      }).catch(() => {
+        this.isTurn = true
+      })
     },
     resetData () {
       // 数据重置
@@ -204,7 +210,7 @@ export default {
         clearTimeout(this.lottery.timer)
         setTimeout(() => {
           this.resetData()
-          this.$emit('change', 'fin', Object.assign({}, this.awardList[this.lotterywin], this.lotterywinr))
+          this.$emit('change', 'fin', Object.assign({}, this.awardList[this.lotterywin-1], this.lotterywinr))
         }, 1000) // 此时间给予用户感受中奖反馈时间
       } else {
         if (this.lottery.times > this.lottery.cynum) this.lottery.speed += 20 // 惯性 越来越慢

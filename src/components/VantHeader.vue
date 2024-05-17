@@ -11,7 +11,6 @@
 </template>
 <script setup>
 import { useRouter } from 'vue-router'
-import Lang from "./Lang.vue";
 const router = useRouter()
 defineProps({
   title: {
