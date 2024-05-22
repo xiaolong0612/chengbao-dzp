@@ -14,7 +14,7 @@
             :key="val.order"
           >
             <div v-if="val.order !== -9">
-              <div class="header" v-if="val.poster"><img :src="val.poster" alt="" /></div>
+              <div class="header" v-if="val.poster"><img class="inside-image" :src="val.poster" alt="" /></div>
               <div class="name">{{ val.prizeName }}</div>
             </div>
             <div v-else class="start text-center" @click.stop.prevent="startGo">
@@ -240,10 +240,11 @@ export default {
   }
 }
 .text-wrap{
-  padding: 0.5rem 0;
+
+  text-align: center;
 }
 .text-wrap img{
-  width: 100%;
+  width: 70%;
 }
 .title:nth-child(2){
   text-align: right;
@@ -354,5 +355,8 @@ export default {
 .tip{
   color: #fff;
   padding: 30px;
+}
+.inside-image{
+  object-fit: cover;
 }
 </style>
